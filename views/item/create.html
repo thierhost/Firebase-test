@@ -1,0 +1,8 @@
+<form action="">
+    <label>item name</label>
+    <input type="text" ng-model="item.name">
+    <label>item category</label>
+    <select ng-model="item.category_id" ng-options="category.id as category.name for category in categories">
+    </select>
+    <button ng-click="create(item)">creer</button>
+</form>

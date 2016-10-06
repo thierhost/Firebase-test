@@ -1,0 +1,12 @@
+<ul>
+    <li ng-repeat="category in categories">
+        {{category.name}}
+
+
+    </li>
+</ul>
+<!-- push a new message onto the array -->
+<form>
+    <input ng-model="category.name" placeholder="category name"/>
+    <button ng-click="creer(category)">Add category</button>
+</form>

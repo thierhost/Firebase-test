@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collectify</title>
+        <!-- vendor -->
+    <script src="dist/script/angular.js"></script>
+    <script src="dist/script/angular-route.js"></script>
+    <script src="dist/script/firebase.js"></script>
+    <script src="dist/script/angularfire.min.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBeFybAP78f3xdP5vRHm8wIJrKZUub7jPQ",
+            authDomain: "collectify-df911.firebaseapp.com",
+            databaseURL: "https://collectify-df911.firebaseio.com",
+            storageBucket: "collectify-df911.appspot.com",
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="app.js"></script>
+    <script src="routing.js"></script>
+        <!-- services -->
+    <script src="src/services/categoryProvider.js"></script>
+    <script src="src/services/itemProvider.js"></script>
+         <!-- controllers -->
+    <script src="src/controllers/categoryController.js"></script>
+    <script src="src/controllers/itemController.js"></script>
+    <script src="src/controllers/imageController.js"></script>
+        <!-- directives -->
+</head>
+<body ng-app="collectify">
+    <div ng-view></div>
+
+</body>
+</html>
